@@ -3,6 +3,44 @@ from math import *
 #Harjutus 02
 #30.09.24
 
+
+#Loo kolm täisarvulist muutjat a, b, c
+#Loo valem, mis arvutab kolmnurga ümbermõõdu
+a=2
+b=2
+c=2
+P= a+b+c
+print("Kolmnurga ümbermõõt on:", P, "cm")
+
+#Toote hind
+#Toote hind 36,75
+#Soodushind hetkel 40%
+#Soovin kolme toote summat
+
+hind = 36.75
+soodushind = 0.40
+kokku = hind * soodushind * 3
+print("Kolm summat kokku:", kokku, "Euri")
+ 
+#Pitsa
+# kokku: 14,19
+# 4,54
+Kogu = 14.19
+Inimesed = 3
+
+Kokku = Kogu / Inimesed
+
+print("Kokku läheb:", Kokku, "euri")
+
+
+# Rulluisutajad
+kiirus = 29.9
+aeg = 24/60
+dist = kiirus * aeg
+
+print("Rulluisutaja jõuab:", dist,"km kaugusele")
+
+
 #Kolmnurga Hüpotenuus
 
 a = 16
