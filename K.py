@@ -1,7 +1,24 @@
 
 import turtle
-#Turtle 3
+
+#Turtle heart
+turtle.color("red")
 turtle.penup()
+turtle.goto(-200, -100)
+turtle.pendown()
+turtle.forward(100)
+turtle.circle(50, 180)
+turtle.right(90)
+turtle.circle(50, 180)
+turtle.forward(100)
+
+
+
+
+#Turtle 3
+turtle.color("black")
+turtle.penup()
+turtle.home()
 turtle.goto(-400, -100)
 turtle.pendown()
 turtle.forward(30)
@@ -75,13 +92,14 @@ turtle.circle(50)
 #Turtle triangle
 turtle.penup()
 turtle.home()
-turtle.goto(-200, -100)
+turtle.goto(-50, -100)
 turtle.pendown()
 turtle.forward(100)
 turtle.left(120)
 turtle.forward(100)
 turtle.left(120)
 turtle.forward(100)
+
 
 
 
