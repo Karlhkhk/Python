@@ -137,6 +137,7 @@ for i in ev_data:
     for j in i:
         print(j, end=" ")
         print(f"{j:>30}", end =" ")
+        keskmine_hind+=int(j[2])
     print()
-    
+    print(keskmine_hind)
 
