@@ -3,7 +3,7 @@
 #Karl Kold
 import random
 import turtle
-"""""
+
 #06
 nimed = ['Martin', 'Tõnu', 'Andres', 'Tõnu', 'Andres', 'Andres', 'Andres', 'Tõnu', 'Marko', 'Mari', 'Jüri', 'Liis', 'Marko', 'Piret', 'Anu']
 unikaalsed_nimed = []
@@ -69,14 +69,14 @@ for _ in range(11):
     else:
         print(f"{i} {tehe} {j} = ")
         vastus = float(input("Vastus: "))
-        if vastus == [round{i/j,2}]:
+        if vastus == [round{i/j,2}]
             print("Õige")
             punktid+=1
         else:
             print("Vale")
 
 #11
-"""
+
 
 for i in range(1,6):
     print("*"*i,end = " ")
@@ -131,13 +131,27 @@ ev_data = [
 ['Hyundai Kona Electric', '258', '37400']
 ]
 
-keskmine_odo=0
-keskmine_hind=0
+keskmine_odo= []
+keskmine_hind= []
+
+
+
 for i in ev_data:
-    for j in i:
-        print(j, end=" ")
-        print(f"{j:>30}", end =" ")
-        keskmine_hind+=int(j[2])
-    print()
-    print(keskmine_hind)
+    if i [0] != "vehicle":
+        keskmine_odo.append(int(i[1]))
+        keskmine_hind.append(int(i[2]))
+    if i [0] != "vehicle" and int(i[1]) > 300:
+        print(i[0])
+
+
+
+print(sum(keskmine_odo)/len(keskmine_odo))
+print(sum(keskmine_hind)/len(keskmine_hind))
+    
+    #for j in i:
+        #print(j, end=" ")
+        #print(f"{j:>30}", end =" ")
+        #keskmine_hind+=int(j[2])
+    #print()
+   # print(keskmine_hind)
 
