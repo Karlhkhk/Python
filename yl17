@@ -11,22 +11,19 @@
 # Tunnitasu: [Tunnitasu]€
 # Makstav tasu: [Palk]
 
-# fail = open ("palgad2.txt") 
-# read = fail.readlines()
-# print(read)
+fail = open ("palgad2.txt") 
+read = fail.readlines()
+print(read)
 
-# mpalgad = []
-# npalgad = []
+nimi = []
 
 
-# for i in read:
-#     r= i.split(",")
+for i in read:
+        r= i.split(",")
     
-# if r[3] == "Mees":
-#     mpalgad.append (float(r[6]))
+if r[2] == "nimi":
+        nimi.append (float(r[6]))
 
-# else:
-#     npalgad.append(float(r[6]))
 
 
 
@@ -40,26 +37,39 @@
 # Tulemused prindi konsooli
 
 
-fail = open ("palgad.txt") 
-read = fail.readlines()
-print(read)
+# fail = open ("palgad.txt") 
+# read = fail.readlines()
+# print(read)
 
-mpalgad = []
-npalgad = []
-for i in read:
-    r= i.split(",")
+# mpalgad = []
+# npalgad = []
+# for i in read:
+#     r= i.split(",")
     
-    if r[3] == "Mees":
-        mpalgad.append (float(r[6]))
+#     if r[3] == "Mees":
+#         mpalgad.append (float(r[6]))
 
-    else:
-        npalgad.append(float(r[6]))
+#     else:
+#         npalgad.append(float(r[6]))
 
-# print(mpalgad)
-# print(npalgad)
 
-print(f"Meeste kesmine palk {sum(mpalgad)/len(mpalgad)}")
-print(f"Naiste kesmine palk {sum(npalgad)/len(npalgad)}")
+# print(f"Meeste kesmine palk {sum(mpalgad)/len(mpalgad)}")
+# print(f"Naiste kesmine palk {sum(npalgad)/len(npalgad)}")
+
+# mtootunnid = []
+# ntootunnid = []
+# for i in read:
+#     r= i.split(",")
+    
+#     if r[3] == "Mees":
+#         mtootunnid.append (float(r[5]))
+
+#     else:
+#         ntootunnid.append(float(r[5]))
+
+# print(f"Meeste keskmised töötunnid {sum(mtootunnid)/len(mtootunnid)}")
+# print(f"Naiste keskmised töötunnid {sum(ntootunnid)/len(ntootunnid)}")
+
 
 
 
