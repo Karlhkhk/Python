@@ -1,0 +1,107 @@
+#ülesanne 17
+#28.11.24
+
+# Kirjuta Pythoni skript, mis loeb failist palgad.txt töötajate andmed ja genereerib iga töötaja kohta eraldi palgatõendi.
+# Tõendid salvesta kausta, mille nimi on käesolev kuu ja aasta (näiteks 02.2025).
+# Failinimeks kasuta formaati ID_Nimi.txt (näiteks 1_Robin.txt). Iga palgatõendi sisu peab olema järgnev:
+# Nimi: [Nimi]
+# Isikukood: [Isikukood]
+# Sugu: [Sugu]
+# Töötunnid: [Töötunnid]
+# Tunnitasu: [Tunnitasu]€
+# Makstav tasu: [Palk]
+
+# fail = open ("palgad2.txt") 
+# read = fail.readlines()
+# print(read)
+
+# mpalgad = []
+# npalgad = []
+
+
+# for i in read:
+#     r= i.split(",")
+    
+# if r[3] == "Mees":
+#     mpalgad.append (float(r[6]))
+
+# else:
+#     npalgad.append(float(r[6]))
+
+
+
+
+
+
+# Palgastatistika – palgad.txt
+# Kirjuta Pythoni skript, mis loeb failist palgad.txt töötajate andmed ja arvutab eraldi
+# meeste keskmised töötunnid, töötasu ning palk
+# naiste keskmised töötunnid, töötasu ning palk
+# Tulemused prindi konsooli
+
+
+fail = open ("palgad.txt") 
+read = fail.readlines()
+print(read)
+
+mpalgad = []
+npalgad = []
+for i in read:
+    r= i.split(",")
+    
+    if r[3] == "Mees":
+        mpalgad.append (float(r[6]))
+
+    else:
+        npalgad.append(float(r[6]))
+
+# print(mpalgad)
+# print(npalgad)
+
+print(f"Meeste kesmine palk {sum(mpalgad)/len(mpalgad)}")
+print(f"Naiste kesmine palk {sum(npalgad)/len(npalgad)}")
+
+
+
+
+# fail = open ("palgad.txt") 
+# tektsiread = fail.readlines()
+# tehingute_arv = len(tektsiread)
+
+# with open("palgad.txt") as fail:
+#     read = fail.readlines()
+#     print(read)
+    
+# for i in tektsiread:
+#     if 
+# fail = open ("palgad.txt") 
+# tektsiread = fail.readlines()
+# palgade_arv = len(tektsiread)
+# mpalgad = 0
+# npalgad = 0
+# for i in tektsiread:
+#     if float(i) >= 0:
+
+# mpalgad = []
+# npalgad = []
+
+# print(mpalgad[3])
+
+
+
+
+
+# fail = open ("pangakonto.txt") 
+# tektsiread = fail.readlines()
+# tehingute_arv = len(tektsiread)
+# pos_tehingud = 0
+# pos_tehingud_summa = 0
+# for i in tektsiread:
+#     if float(i) >= 0:
+        
+#         pos_tehingud+=1
+#         pos_tehingud_summa+=float(i)
+
+# print (f"Tehinguid Kokku: {tehingute_arv}")
+# print (f"Tehinguid Kokku: {pos_tehingud}")
+# print (f"Tehingute summa: {pos_tehingud_summa}")
