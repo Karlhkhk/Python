@@ -6,10 +6,10 @@
 
 #Ül 10
 
-# for i in range (3):
-#     print(input("Sisesta kolm kaugushüppe tulemust: "))
-# tulemused = []
-# tulemused = 
+for i in range (3):
+    print(input("Sisesta kolm kaugushüppe tulemust: "))
+tulemused = [i]
+tulemused = print (i)
 
 #Ül 11
 
@@ -40,6 +40,3 @@
 
 
 #Ül 15
-
-
-
