@@ -10,10 +10,18 @@
 	# programmi dialoog kasutajaga on arusaadav ja Ć¼heselt mĆµistetav - 1p
 	# kood kommenteeritud - 1p
 	
-for i in range (3):
-    print(input("Sisesta kolm kaugushüppe tulemust: "))
-tulemused = [i]
-tulemused = print (i)
+kaugushupped = [] #Hoiab masiivis tulemused
+for i in range(3):
+    tulemus = float(input(f"Sisesta {i+1}. kaugushüpped: "))
+    kaugushupped.append(tulemus)
+
+#Leiab keskmise ja parima tulemuse
+parim = max(kaugushupped)
+keskmine = sum(kaugushupped) / len(kaugushupped)
+
+#Prindib tulemused
+print(f"Parim tulemus: {parim} meetrit")
+print(f"Keskmine tulemus: {keskmine} meetrit")
 
 #Ül 11
 # sinu programm kĆ¼sib kasutajalt, kas ta soovib salakeelt luua vĆµi tĆµlkida - 1p
@@ -57,6 +65,12 @@ tulemused = print (i)
 #Ül 14
 #Palkade vĆµrdlus - Loo palk.txt fail tĆ¶Ć¶tajate nime, soo ja palganumbriga (10 tĆ¶Ć¶tajat).
 #Koosta programm, mis analĆ¼Ć¼sib kas firmas toimub diskrimineerimist soo jĆ¤rgi. Selleks vĆµrdle omavahel meeste ja naiste palkade keskmiseid, samuti meeste ja naiste kĆµige kĆµrgemat palka. Programm peab tegema otsuse.
+
+	
+
+
+#Ül 15
+#Temperatuurid - Programm peab tĆ¶Ć¶tlema Ć¼he aasta kĆµigi pĆ¤evade temperatuure. Kirjutada programm, mis leiab kuude kaupa, mitmendal kuupĆ¤eval oli kĆµige soojem. VĆ¤ljasta kuupĆ¤ev ja vastav temperatuur. (Kui sama temperatuuriga oli mitu pĆ¤eva, vĆ¤ljasta vĆ¤hemalt Ć¼ks
 
 	
 
